@@ -8,5 +8,5 @@ app.use(express.json());
 app.use(cors());
 app.use("/api/messages", message_routes);
 
-const PORT = 2345;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
