@@ -61,6 +61,7 @@ class MessageController {
 
             const deleted = await Customer.findByIdAndDelete(req.params.id);
             if (!deleted) return res.status(500).send("Message not deleted");
+            else return res.send(message);
             return res.status(200).send("Customer deleted successfully");
         } catch (err) {
             return res.status(500).send(err);
