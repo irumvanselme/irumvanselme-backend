@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
-const db = "mongodb://localhost:27017/anselme";
+const db =
+    "mongodb+srv://anselme:123@cluster0.gu14c.mongodb.net/<irumvanselme>?retryWrites=true&w=majority";
 
 const connectToDB = async () => {
     try {
